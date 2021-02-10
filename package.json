@@ -1,6 +1,6 @@
 {
   "name": "facebook-login-react",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack serve --inline --config webpack.config.js",
