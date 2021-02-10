@@ -1,13 +1,16 @@
+const ESLintPlugin = require('eslint-webpack-plugin');
+
 module.exports = {
+  resolve: {extensions: ['.js','.jsx']},
   entry: {
-    demo: ['./demo/index.js']
+    demo: ['./demo/index.jsx']
   },
   output: {
     filename: 'bundle.js',
   },
   module: {
     rules: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.scss$/, use: ['css-loader', 'postcss-loader', 'sass-loader']}
     ]
   },
@@ -16,5 +19,5 @@ module.exports = {
     hot: true,
     https: true
   },
-
+  plugins: [new ESLintPlugin()]
 }

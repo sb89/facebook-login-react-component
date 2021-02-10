@@ -1,9 +1,11 @@
 module.exports = {
+  resolve: {extensions: ['.js','.jsx']},
+
   entry: './src/index.js',
 
   module: {
     rules: [
-      { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
+      { test: /\.jsx?$/, loader: 'babel-loader', exclude: /node_modules/ },
       { test: /\.scss$/, use: ['css-loader', 'postcss-loader', 'sass-loader']}
     ]
   },
@@ -30,5 +32,4 @@ module.exports = {
     libraryTarget: 'umd',
     library: 'facebook-login-react-component'
   }
-
 };
