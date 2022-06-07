@@ -1,6 +1,6 @@
 {
   "name": "facebook-login-react",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "scripts": {
     "start": "NODE_ENV=development webpack serve --inline --config webpack.config.js",
@@ -46,8 +46,8 @@
     "webpack-dev-server": "^3.11.2"
   },
   "peerDependencies": {
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
   },
   "dependencies": {
     "prop-types": "^15.7.2"
