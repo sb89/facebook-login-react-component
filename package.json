@@ -1,6 +1,6 @@
 {
   "name": "facebook-login-react",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "main": "dist/index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -54,6 +54,7 @@
     "prop-types": "^15.7.2"
   },
   "files": [
-    "dist/index.js"
+    "dist/index.js",
+    "index.d.ts"
   ]
 }
