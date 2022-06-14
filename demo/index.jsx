@@ -5,7 +5,7 @@ import { FacebookLoginWithButton } from '../src';
 
 ReactDOM.render(
   <FacebookLoginWithButton
-    appId="567646727183143"
+    appId="xxxxxxxxxxx"
     callback={console.log}
     autoLoad={false}
   />,
